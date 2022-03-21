@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=200)
-    decription = models.TextField(max_length=1000)
+    decription = models.TextField(max_length=1000, blank=True)
 
     def __str__(self):
         return self.name
@@ -28,8 +28,8 @@ class Author(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
-    decription = models.TextField(max_length=1000)
-    website = models.URLField(max_length=200,null=True)
+    decription = models.TextField(max_length=1000,blank=True)
+    website = models.URLField(max_length=200,blank=True)
     authors = models.ManyToManyField(Author)
     categories = models.ManyToManyField(Category)
     publishers = models.ManyToManyField(Publisher)
