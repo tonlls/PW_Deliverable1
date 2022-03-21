@@ -27,3 +27,8 @@ https://github.com/tonlls/PW_Deliverable1
     - Database: This server will contain the database, wich can be relational or not relational since the connector will be on charge of interacting directly within the database.
 2. The Backend depends on the database, and the web depends on the backend to get the data.
 3. The only optional one is the Web.
+
+## Users
+https://github.com/tonlls
+https://github.com/IanRibaltaGene
+https://github.com/incipasa
