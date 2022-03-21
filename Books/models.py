@@ -11,8 +11,8 @@ class Category(models.Model):
 
 class Publisher(models.Model):
     name = models.CharField(max_length=200)
-    decription = models.TextField(max_length=1000)
-    website = models.URLField(max_length=200,null=True)
+    decription = models.TextField(max_length=1000,blank=True)
+    website = models.URLField(max_length=200,blank=True)
     country = models.CharField(max_length=200)
 
     def __str__(self):
@@ -20,8 +20,8 @@ class Publisher(models.Model):
 
 class Author(models.Model):
     name = models.CharField(max_length=200)
-    decription = models.TextField(max_length=1000,null=True)
-    website = models.URLField(max_length=200,null=True)
+    decription = models.TextField(max_length=1000,blank=True)
+    website = models.URLField(max_length=200,blank=True)
 
     def __str__(self):
         return self.name
